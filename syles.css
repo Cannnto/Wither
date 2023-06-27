@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #7159c1;
+}
+.container_{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 20vh 60vh 20vh;
+    grid-template-areas: "header header"
+                         "nav main"
+                         "footer footer";
+    grid-gap: 1vw;
+    border: 12PX solid black;
+}
+header{
+    background-color: purple;
+    grid-area: header;
+}
+nav{
+    background-color: green;
+    grid-area: nav;
+}
+main{
+    background-color: cyan;
+    grid-area: main;
+}
+footer{
+    background-color: blue;
+    grid-area: footer;
+}
