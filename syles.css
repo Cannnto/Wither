@@ -7,16 +7,19 @@
 .container_{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 20vh 60vh 20vh;
-    grid-template-areas: "header header"
+    grid-template-rows: 10vh 145vh 20vh;
+    grid-template-areas: "0 0"
                          "nav main"
-                         "footer footer";
+                         "nav footer";
     grid-gap: 1vw;
-    border: 12PX solid black;
 }
 header{
     background-color: purple;
-    grid-area: header;
+    width: 100vw;
+    height: 5.5vw;
+    position: fixed;
+    top:0;
+    z-index: 2;
 }
 nav{
     background-color: green;
@@ -25,7 +28,59 @@ nav{
 main{
     background-color: cyan;
     grid-area: main;
+    display: grid;
+    padding: 5vw;
+    gap: 1vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "card_1 card_2 card_3"
+                         "card_4 card_5 card_6"
+                         "card_7 card_8 card_9";
+    }
+
+.card_1{
+    grid-area: card_1;
+    border:solid 1vw ;
 }
+.card_2{
+    grid-area: card_2;
+}
+.card_3{
+    grid-area: card_3;
+}
+.card_4{
+    grid-area: card_4;
+}
+.card_5{
+    grid-area: card_5;
+}
+.card_6{
+    grid-area: card_6;
+}
+.card_7{
+    grid-area: card_7;
+}
+.card_8{
+    grid-area: card_8;
+}
+.card_9{
+    grid-area: card_9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
     background-color: blue;
     grid-area: footer;
