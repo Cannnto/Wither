@@ -1,74 +1,158 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
-    background-color: #7159c1;
 }
 .container_{
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 10vh 145vh 20vh;
-    grid-template-areas: "0 0"
-                         "nav main"
-                         "nav footer";
-    grid-gap: 1vw;
+    grid-template-rows: 10vh 200vh 20vh;
+    grid-template-areas: "0"
+                         "main"
+                         "footer";
 }
 header{
-    background-color: purple;
+    background-color: #170C36;
     width: 100vw;
-    height: 5.5vw;
+    height: 10vh;
     position: fixed;
     top:0;
     z-index: 2;
+    border-bottom:solid 0.5vh;
+    display: flex;
+    justify-content: center;
 }
-nav{
-    background-color: green;
-    grid-area: nav;
+header a{
+    margin-top: 1vh;
+    width: 10vw;
+    height: 5vh;
+    animation: icon 1s ease-out infinite alternate; 
 }
+header img{
+    width: 10vw;
+}
+@keyframes icon{
+    0%{
+        transform: translatey(20px)
+}
+}
+
+
+
+/*aside{
+    background-color: #170C36;
+    position: fixed;
+    height: 100vh;
+    width: 16.7vw;
+    top:10vh;
+    border-right: solid 0.5vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
+    grid-template-areas: " dropdown_1 "
+                         " dropdown_2 "
+                         " dropdown_3 "
+                         " dropdown_4 "
+                         " dropdown_5 "
+                         " dropdown_6 ";
+}
+.dropdown_1{
+    grid-area: dropdown_1;  
+}
+.dropdown_2{
+    grid-area: dropdown_2;   
+}
+.dropdown_3{
+    grid-area: dropdown_3;   
+}
+.dropdown_4{
+    grid-area: dropdown_4;   
+}
+.dropdown_5{
+    grid-area: dropdown_5;   
+}
+.dropdown_6{
+    grid-area: dropdown_6;   
+}*/
+
+
+
+
+/*main cards & grid*/
 main{
-    background-color: cyan;
+    background-color: #532BC2;
     grid-area: main;
     display: grid;
-    padding: 5vw;
+    padding: 5vw 15vw;
     gap: 1vw;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "card_1 card_2 card_3"
+    grid-template-rows:  0.79fr auto auto auto;
+    grid-template-areas: "carousel carousel carousel"
+                         "card_1 card_2 card_3"
                          "card_4 card_5 card_6"
                          "card_7 card_8 card_9";
-    }
+    border-bottom: solid 0.5vh;
+}
 
+#carouselExampleAutoplaying_0{
+    grid-area: carousel;
+    overflow: hidden;
+    border-radius: 1vw;
+    margin-bottom: 4vh;
+}
+.d-block{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    background-color: #B19DD0;
+}
 .card_1{
     grid-area: card_1;
-    border:solid 1vw ;
+    overflow: hidden;
+    border-radius:1vw;
 }
 .card_2{
     grid-area: card_2;
+    overflow: hidden;
+    border-radius:1vw;
 }
 .card_3{
     grid-area: card_3;
+    overflow: hidden;
+    border-radius:1vw;
 }
 .card_4{
     grid-area: card_4;
+    overflow: hidden;
+    border-radius:1vw;
 }
 .card_5{
     grid-area: card_5;
+    overflow: hidden;
+    border-radius:1vw;
 }
 .card_6{
     grid-area: card_6;
+    overflow: hidden;
+    border-radius:1vw;
 }
 .card_7{
     grid-area: card_7;
+    overflow: hidden;
+    border-radius:1vw;
 }
 .card_8{
     grid-area: card_8;
+    overflow: hidden;
+    border-radius:1vw;
 }
 .card_9{
     grid-area: card_9;
+    overflow: hidden;
+    border-radius:1vw;
 }
-
-
-
 
 
 
@@ -82,6 +166,6 @@ main{
 
 
 footer{
-    background-color: blue;
+    background-color: #160B33;
     grid-area: footer;
 }
