@@ -6,7 +6,7 @@
 }
 .container_{
     display: grid;
-    grid-template-rows: 10vh 200vh 20vh;
+    grid-template-rows: 10vh auto 20vh;
     grid-template-areas: "0"
                          "main"
                          "footer";
