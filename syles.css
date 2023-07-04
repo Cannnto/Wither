@@ -101,9 +101,36 @@ main{
     border-radius: 1vw;
     margin-bottom: 4vh;
 }
-.d-block{
-    display: flex;
-    justify-content: center;
+    
+
+.carou_item div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "0 0"; 
+    z-index: 0;
+    column-gap: 1vw;
+}
+.carousel-item.active{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "0 0"; 
+    z-index: 3;
+    column-gap: 1vw;
+}
+.carousel-item img{
+    border-radius: 1vw;
+}
+.carousel-item.active img{
+    border-radius: 1vw;
+}
+.carousel-inner{
+
+}
+.carousel-control-prev{
+ z-index: 10;
+}
+.carousel-control-next{
+z-index: 11;
 }
 .card{
     background-color: #B19DD0;
