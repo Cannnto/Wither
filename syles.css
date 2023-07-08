@@ -23,17 +23,16 @@ header{
     justify-content: center;
 }
 header a{
-    margin-top: 1vh;
-    width: 10vw;
-    height: 5vh;
-    animation: icon 1s ease-out infinite alternate; 
+    margin-top: 1.2vh;
+    height: 4vh;
+    animation: icon 2s ease-out infinite alternate; 
 }
 header img{
-    width: 10vw;
+    width: 170px;
 }
 @keyframes icon{
     0%{
-        transform: translatey(20px)
+        transform: translatey(3vh)
 }
 }
 
@@ -84,71 +83,101 @@ main{
     background-color: #532BC2;
     grid-area: main;
     display: grid;
-    padding: 5vw 15vw;
+    padding: 5vw 11vw;
     gap: 1vw;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  auto 1fr 1fr 1fr;
+    grid-template-rows:  auto auto 1fr 1fr;
     grid-template-areas: "carousel carousel carousel"
-                         "card_1 card_2 card_3"
+                         "card_1 card_1 card_1"
                          "card_4 card_5 card_6"
                          "card_7 card_8 card_9";
     border-bottom: solid 0.5vh;
 }
-
-#carouselExampleAutoplaying_0{
+.carousel.banner{
     grid-area: carousel;
-    overflow: hidden;
     border-radius: 1vw;
-    margin-bottom: 4vh;
-}
-    
+    overflow: hidden;
 
+}
+.carousel-item.active.banner{
+    position: relative;
+}
+.text_banner_1{
+    position: absolute;
+    top: 0;
+    color: #B19DD0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vw 2vw;
+    width: 40%;
+    height: 100%;
+}
+.text_banner_1 img{
+    width: 20vw;
+    animation: icon 1s ease-out infinite alternate;
+    margin-bottom: 5vh;
+}
+.text_banner_1 h1{
+    font-size: 2vw;
+}
+.row{
+    grid-area: card_1;
+    margin-bottom: 4vh;
+    border-radius: 1vh;
+    position: relative;
+}
+#carouselExampleAutoplaying_0{
+    padding: 0;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+/*carousel_item*/
 .carou_item div{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "0 0"; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "0 0 0 0 "; 
     z-index: 0;
-    column-gap: 1vw;
+    column-gap: vw;
 }
 .carousel-item.active.um{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "0 0"; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "0 0 0 0"; 
     z-index: 3;
-    column-gap: 1vw;
+    column-gap: vw;
 }
 .carousel-item img{
-    border-radius: 1vw;
+    border-radius: vw;
 }
 .carousel-item.active img{
-    border-radius: 1vw;
+    border-radius: vw;
 }
-.carousel-inner{
+.text_botao{
+    color: white;
+    font-size: 1vw;
+    font-family: 'Karla', sans-serif;
+}
+.carousel-control-prev.row{
+ top:0;
+ left: 6vw;
+ z-index: 10;
+ top: -1vh;
+ height: 5vh;
+ width: 2vw;
+ position: absolute;
 
 }
-.carousel-control-prev{
+.carousel-control-next.row{
+ top: -1vh;
+ right: 70vw;
  z-index: 10;
-}
-.carousel-control-next{
-z-index: 11;
+ height: 5vh;
+ width: 2vw;
+ position: absolute;
 }
 .card{
     background-color: #B19DD0;
-}
-.card_1{
-    grid-area: card_1;
-    overflow: hidden;
-    border-radius:1vw;
-}
-.card_2{
-    grid-area: card_2;
-    overflow: hidden;
-    border-radius:1vw;
-}
-.card_3{
-    grid-area: card_3;
-    overflow: hidden;
-    border-radius:1vw;
 }
 .card_4{
     grid-area: card_4;
