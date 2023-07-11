@@ -316,7 +316,7 @@ main{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "0 0 0 0 "; 
     z-index: 0;
-    column-gap: vw;
+    column-gap: 1vw;
 }
 .carousel-item.active.um{
     display: grid;
@@ -326,10 +326,10 @@ main{
     column-gap: vw;
 }
 .carousel-item img{
-    border-radius: vw;
+    border-radius: 1vw;
 }
 .carousel-item.active img{
-    border-radius: vw;
+    border-radius: 1vw;
 }
 .text_botao{
     color: white;
