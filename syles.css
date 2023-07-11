@@ -6,15 +6,18 @@
 }
 .container_{
     display: grid;
-    grid-template-rows: 10vh auto 20vh;
+    grid-template-rows: 5vw auto 20vh;
     grid-template-areas: "0"
                          "main"
                          "footer";
 }
+
+/*Header*/
+
 header{
     background-color: #170C36;
     width: 100vw;
-    height: 10vh;
+    height: 5vw;
     position: fixed;
     top:0;
     z-index: 20;
@@ -22,19 +25,174 @@ header{
     display: flex;
     justify-content: center;
 }
-header a{
-    margin-top: 1.2vh;
+.header_container{
+    position: relative;
+}
+
+.dropdown_{
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    right: 30vw;
+    top: 10%;
+}
+.dropdown button{
+    background-color: #B19DD0;
+    color: #160B33;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    width: 170px;
+    height: 2vw;
+    font-size: 1rem;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color:#532BC2;
+}
+.btn:hover {
+    background-color: #532BC2;
+}
+
+
+.logo{
     height: 4vh;
     animation: icon 2s ease-out infinite alternate; 
 }
 header img{
-    width: 170px;
+    width: 10vw;
 }
 @keyframes icon{
     0%{
-        transform: translatey(3vh)
+        transform: translatey(2vw)
 }
 }
+
+
+.form_cadas{
+    position: absolute;
+    top: 30%;
+    left: 90vw;
+    width: 50vw;
+}
+.form_entrar{
+    position: absolute;
+    top: 30%;
+    left: 85vw;
+}
+.offcanvas.offcanvas-end.entrar{
+    width: 23vw;
+    background-color:#160B33;
+    color: #B19DD0;
+}
+.offcanvas.offcanvas-end.cadas{
+    width: 23vw;
+    background-color:#B19DD0;
+    color:#160B33;
+}
+.btn.btn-primary.entrar{
+    width: 4vw;
+    height: 2vw;
+    font-family: 'Karla', sans-serif;
+    background: transparent;
+    border-color:#B19DD0;
+    font-size: 1rem;
+}
+.btn.btn-primary.entrar:hover{
+    background-color: #B19DD0;
+    color: #160B33;
+    font-weight: bold;
+    
+}
+.btn.btn-primary.cadas{
+    width: 7vw;
+    height: 2vw;
+    font-family: 'Karla', sans-serif;
+    background-color:#B19DD0;
+    border-color:#160B33;
+    color: #160B33;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.btn.btn-primary.cadas:hover{
+    background-color: #532BC2;
+    color: white;
+}
+.btn-close{
+    background-color: #B19DD0;
+}
+
+
+.formula_entrar button{
+    font-family: 'Karla', sans-serif;
+    background-color:#B19DD0;
+    border-color:#160B33;
+    color: #160B33;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.formula_entrar button:hover{
+    background-color: #532BC2;
+    color: white;
+}
+.formula_cadas button{
+    font-family: 'Karla', sans-serif;
+    background-color:#160B33;
+    border-color:#B19DD0;
+    color:white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.formula_cadas button:hover{
+    background-color: #532BC2;
+    color: white;
+}
+
+.form-label.cadas.email{
+    font-family: 'Karla', sans-serif;
+    color: #160B33;
+    font-weight: bold;
+    font-size: 1rem;
+    overflow: show;
+}
+.form-label.cadas.pass{
+    font-family: 'Karla', sans-serif;
+    color: #160B33;
+    font-weight: bold;
+    font-size: 1rem;
+    overflow: show;
+}
+.form-label.entrar.email{
+    font-family: 'Karla', sans-serif;
+    color: #B19DD0;
+    font-weight: bold;
+    font-size: 1rem;
+    overflow: show;
+}
+.form-label.entrar.pass{
+    font-family: 'Karla', sans-serif;
+    color:#B19DD0;
+    font-weight: bold;
+    font-size: 1rem;
+    overflow: show;
+}
+.form-text{
+    font-family: 'Karla', sans-serif;
+
+    font-size: 0.9rem;
+    overflow: show;
+}
+.form-check-label{
+    font-family: 'Karla', sans-serif;
+    font-size: 0.9rem;
+    overflow: show;
+}
+
+.termos{
+    border-bottom: #160B33 0.1vw solid;
+}
+
+
+
 
 
 
@@ -115,12 +273,32 @@ main{
 }
 .text_banner_1 img{
     width: 20vw;
-    animation: icon 1s ease-out infinite alternate;
-    margin-bottom: 5vh;
+    animation: icon 1s ease-in-out infinite alternate;
+    margin-bottom: 6vh;
 }
 .text_banner_1 h1{
     font-size: 2vw;
 }
+.text_banner_2{
+    position: absolute;
+    top: -4.45vw;
+    left: 70%;
+    color: #B19DD0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vw 2vw;
+    width: 30%;
+    height: 100%;
+}
+.text_banner_2 img{
+    width: 17vw;
+    animation: icon 1s ease-in-out infinite alternate;
+    margin-bottom: 10vh;
+}
+
+
+
 .row{
     grid-area: card_1;
     margin-bottom: 4vh;
@@ -176,6 +354,9 @@ main{
  width: 2vw;
  position: absolute;
 }
+
+
+
 .card{
     background-color: #B19DD0;
 }

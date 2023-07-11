@@ -14,9 +14,82 @@
 <body>
   <div class="container_">
   <header>
-    <a href="#">
-    <img src="imgs/png/logo-no-background.png" alt="">
+    <div class="dropdown_">    
+      <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+    <a class="logo" href="#">
+      <img src="imgs/png/logo-no-background.png" alt="">
     </a>
+    <div class="form_entrar">
+      <button class="btn btn-primary entrar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight_entrar" aria-controls="offcanvasRight_entrar">
+        Entrar
+      </button>
+      <div class="offcanvas offcanvas-end entrar" tabindex="-1" id="offcanvasRight_entrar" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            <img src="imgs/wither-low-resolution-logo-white-on-transparent-background.png" alt="">
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body entrar" >
+          <div>
+            <form class="formula_entrar">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label entrar email">Endereço de email</label>
+                <input type="email" class="form-control" style="width: 20vw;" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label entrar pass">Senha</label>
+                <input type="password" style="width: 20vw;" class="form-control" id="exampleInputPassword1">
+              </div>
+              <button type="submit" class="btn btn-primary">Logar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form_cadas">
+      <button class="btn btn-primary cadas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight_cadas" aria-controls="offcanvasRight_cadas">
+        Cadastrar-se
+      </button>
+      <div class="offcanvas offcanvas-end cadas" tabindex="-1" id="offcanvasRight_cadas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            <img src="imgs/wither-high-resolution-logo-black-on-transparent-background.png" alt="">
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body cadas" >
+          <div>
+            <form class="formula_cadas">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label cadas email">Endereço de email</label>
+                <input type="email" class="form-control" style="width: 20vw;" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nós nunca iremos compartilhar seu email com ninguém.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label cadas pass">Senha</label>
+                <input type="password" style="width: 20vw;" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Clique aqui para concordar com os <a href="#" style="text-decoration: underline; color:#7A26C1;">termos e condições</a></p>   </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Cadastrar-se</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <main>
     <div id="carouselExample" class="carousel slide banner">
@@ -30,6 +103,12 @@
         </div>
         <div class="carousel-item">
           <img src="imgs/wither_banner_2.png" class="d-block w-100" alt="...">
+          <div class="text_banner_2">
+            <img src="imgs/wither-low-resolution-logo-white-on-transparent-background.png" alt="">
+            <h1>
+              Participe de nosso jogos e ganhe diversos prêmios
+            </h1>
+          </div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -59,18 +138,18 @@
         <div class="carousel-inner">
           <div class="carou_item">
             <div class="carousel-item active um" id="carou_div">
-              <img src="imgs/png/logo-white_banner.png" class="d-block w-100" alt="...">
-              <img src="imgs/png/logo-black_banner.png" class="d-block w-100" alt="...">
-              <img src="imgs/png/logo-white_banner.png" class="d-block w-100" alt="...">
-              <img src="imgs/png/logo-black_banner.png" class="d-block w-100" alt="...">
+              <img src="imgs/j1.png" class="d-block w-100" alt="...">
+              <img src="imgs/j2.png" class="d-block w-100" alt="...">
+              <img src="imgs/j3.png" class="d-block w-100" alt="...">
+              <img src="imgs/j4.png" class="d-block w-100" alt="...">
             </div>
           </div>
           <div class="carou_item">
             <div class="carousel-item um" id="carou_div">
-              <img src="imgs/png/logo-black_banner.png" class="d-block w-100" alt="...">
-              <img src="imgs/png/logo-white_banner.png" class="d-block w-100" alt="...">
-              <img src="imgs/png/logo-white_banner.png" class="d-block w-100" alt="...">
-              <img src="imgs/png/logo-black_banner.png" class="d-block w-100" alt="...">
+              <img src="imgs/j5.png" class="d-block w-100" alt="...">
+              <img src="imgs/j6.png" class="d-block w-100" alt="...">
+              <img src="imgs/j7.png" class="d-block w-100" alt="...">
+              <img src="imgs/j8.png" class="d-block w-100" alt="...">
             </div>
           </div>
         </div>
