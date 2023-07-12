@@ -6,7 +6,7 @@
 }
 .container_{
     display: grid;
-    grid-template-rows: 5vw auto 20vh;
+    grid-template-rows: 5vw auto 15vw;
     grid-template-areas: "0"
                          "main"
                          "footer";
@@ -21,7 +21,7 @@ header{
     position: fixed;
     top:0;
     z-index: 20;
-    border-bottom:solid 0.5vh;
+    border-bottom:solid 0.5vw;
     display: flex;
     justify-content: center;
 }
@@ -29,22 +29,20 @@ header{
     position: relative;
 }
 
-.dropdown_{
-    position: relative;
-}
-.dropdown{
+
+.dropdown button{
     position: absolute;
     right: 30vw;
-    top: 10%;
-}
-.dropdown button{
     background-color: #B19DD0;
     color: #160B33;
     font-weight: bold;
     font-family: 'Karla', sans-serif;
-    width: 170px;
+    width: 10vw;
     height: 2vw;
-    font-size: 1rem;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
     background-color:#532BC2;
@@ -54,8 +52,10 @@ header{
 }
 
 
+
+
 .logo{
-    height: 4vh;
+    height: 4vw;
     animation: icon 2s ease-out infinite alternate; 
 }
 header img{
@@ -68,17 +68,62 @@ header img{
 }
 
 
-.form_cadas{
+
+
+.btn.btn-primary.entrar{
     position: absolute;
     top: 30%;
-    left: 90vw;
-    width: 50vw;
+    left: 83vw;
+    width: 4vw;
+    height: 2vw;
+    font-family: 'Karla', sans-serif;
+    background: transparent;
+    border-color:#B19DD0;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
-.form_entrar{
+.btn.btn-primary.entrar p{
+    margin: 0;
+}
+.btn.btn-primary.cadas:hover{
+    background-color: #B19DD0;
+    color: #160B33;
+    font-weight: bold;
+    border-color:#B19DD0;
+}
+.btn.btn-primary.cadas{
     position: absolute;
     top: 30%;
-    left: 85vw;
+    left: 88vw;
+    width: 9vw;
+    height: 2vw;
+    font-family: 'Karla', sans-serif;
+    background-color:#B19DD0;
+    border-color:#160B33;
+    color: #160B33;
+    font-weight: bold;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
+.btn.btn-primary.cadas:hover{
+    background-color: #532BC2;
+    color: white;
+    border-color: #B19DD0;
+}
+.btn.btn-primary.cadas p{
+    margin: 0;
+}
+.btn-close{
+    background-color: #B19DD0;
+}
+
+/*offcanvas*/
 .offcanvas.offcanvas-end.entrar{
     width: 23vw;
     background-color:#160B33;
@@ -89,46 +134,13 @@ header img{
     background-color:#B19DD0;
     color:#160B33;
 }
-.btn.btn-primary.entrar{
-    width: 4vw;
-    height: 2vw;
-    font-family: 'Karla', sans-serif;
-    background: transparent;
-    border-color:#B19DD0;
-    font-size: 1rem;
-}
-.btn.btn-primary.entrar:hover{
-    background-color: #B19DD0;
-    color: #160B33;
-    font-weight: bold;
-    
-}
-.btn.btn-primary.cadas{
-    width: 7vw;
-    height: 2vw;
-    font-family: 'Karla', sans-serif;
-    background-color:#B19DD0;
-    border-color:#160B33;
-    color: #160B33;
-    font-weight: bold;
-    font-size: 1rem;
-}
-.btn.btn-primary.cadas:hover{
-    background-color: #532BC2;
-    color: white;
-}
-.btn-close{
-    background-color: #B19DD0;
-}
-
-
 .formula_entrar button{
     font-family: 'Karla', sans-serif;
     background-color:#B19DD0;
     border-color:#160B33;
     color: #160B33;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1vw;
 }
 .formula_entrar button:hover{
     background-color: #532BC2;
@@ -140,7 +152,7 @@ header img{
     border-color:#B19DD0;
     color:white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1vw;
 }
 .formula_cadas button:hover{
     background-color: #532BC2;
@@ -151,39 +163,39 @@ header img{
     font-family: 'Karla', sans-serif;
     color: #160B33;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1vw;
     overflow: show;
 }
 .form-label.cadas.pass{
     font-family: 'Karla', sans-serif;
     color: #160B33;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1vw;
     overflow: show;
 }
 .form-label.entrar.email{
     font-family: 'Karla', sans-serif;
     color: #B19DD0;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1vw;
     overflow: show;
 }
 .form-label.entrar.pass{
     font-family: 'Karla', sans-serif;
     color:#B19DD0;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1vw;
     overflow: show;
 }
 .form-text{
     font-family: 'Karla', sans-serif;
 
-    font-size: 0.9rem;
+    font-size: 0.9vw;
     overflow: show;
 }
 .form-check-label{
     font-family: 'Karla', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.9vw;
     overflow: show;
 }
 
@@ -199,14 +211,14 @@ header img{
 /*aside{
     background-color: #170C36;
     position: fixed;
-    height: 100vh;
+    height: 100vw;
     width: 16.7vw;
-    top:10vh;
-    border-right: solid 0.5vh;
+    top:10vw;
+    border-right: solid 0.5vw;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
+    grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw;
     grid-template-areas: " dropdown_1 "
                          " dropdown_2 "
                          " dropdown_3 "
@@ -249,7 +261,7 @@ main{
                          "row_1 row_1 row_1"
                          "card_4 card_5 card_6"
                          "card_7 card_8 card_9";
-    border-bottom: solid 0.5vh;
+    border-bottom: solid 0.5vw;
 }
 .carousel.banner{
     grid-area: carousel;
@@ -274,7 +286,7 @@ main{
 .text_banner_1 img{
     width: 20vw;
     animation: icon 1s ease-in-out infinite alternate;
-    margin-bottom: 6vh;
+    margin-bottom: 6vw;
 }
 .text_banner_1 h1{
     font-size: 2vw;
@@ -294,16 +306,28 @@ main{
 .text_banner_2 img{
     width: 17vw;
     animation: icon 1s ease-in-out infinite alternate;
-    margin-bottom: 10vh;
+    margin-bottom: 5vw;
 }
+.text_banner_2 h1{
+    font-size: 2vw;
+}
+.carousel-control-next-icon{
+    background-size: 2vw;
+}
+.carousel-control-prev-icon{
+    background-size: 2vw;
+}
+
 
 
 
 .row{
     grid-area: row_1;
-    margin-bottom: 4vh;
-    border-radius: 1vh;
+    margin-bottom: 4vw;
+    border-radius: 1vw;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 #carouselExampleAutoplaying_0{
     padding: 0;
@@ -325,32 +349,34 @@ main{
     z-index: 3;
     column-gap: vw;
 }
-.carousel-item img{
-    border-radius: 1vw;
+.carousel-item.um img{
+    border-radius: 2vw;
+    border: 0.3vw solid #B19DD0;
 }
-.carousel-item.active img{
-    border-radius: 1vw;
+.carousel-item.active.um img{
+    border-radius: 2vw;
+    border: 0.3vw solid #B19DD0;
 }
 .text_botao{
-    color: white;
-    font-size: 1vw;
+    
+    color:#B19DD0;
+    font-weight: bold;
+    font-size: 2vw;
     font-family: 'Karla', sans-serif;
 }
 .carousel-control-prev.row{
- top:0;
- left: 6vw;
+
+ left: 11vw;
  z-index: 10;
- top: -1vh;
- height: 5vh;
+ height: 3vw;
  width: 2vw;
  position: absolute;
 
 }
 .carousel-control-next.row{
- top: -1vh;
- right: 70vw;
+ right: 65vw;
  z-index: 10;
- height: 5vh;
+ height: 3vw;
  width: 2vw;
  position: absolute;
 }
@@ -410,4 +436,34 @@ main{
 footer{
     background-color: #160B33;
     grid-area: footer;
+    background-image: url("imgs/footer_background.png");
+    background-size: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+.footer_img{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: " 0 0 0";
+    gap: 2vw;
+    margin-bottom: 2vw;
+    
+}
+.footer_img img{
+width: 3vw;
+}
+footer p{
+    color:#B19DD0;
+    font-weight: bold;
+    font-size: 2vw;
+    font-family: 'Karla', sans-serif;
+}
+
+
+
+
+
+
