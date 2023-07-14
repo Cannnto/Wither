@@ -25,9 +25,6 @@ header{
     display: flex;
     justify-content: center;
 }
-.header_container{
-    position: relative;
-}
 
 
 .dropdown button{
@@ -51,7 +48,15 @@ header{
 .btn:hover {
     background-color: #532BC2;
 }
-
+.dropdown-menu{
+    padding: 0;
+    margin: 0;
+    width: 13vw;
+    font-size: 1vw;
+    font-family: 'Karla', sans-serif;
+    background-color: #B19DD0;
+    --bs-dropdown-min-width: 0;
+}
 
 
 
@@ -216,42 +221,6 @@ header img{
 
 
 
-/*aside{
-    background-color: #170C36;
-    position: fixed;
-    height: 100vw;
-    width: 16.7vw;
-    top:10vw;
-    border-right: solid 0.5vw;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw;
-    grid-template-areas: " dropdown_1 "
-                         " dropdown_2 "
-                         " dropdown_3 "
-                         " dropdown_4 "
-                         " dropdown_5 "
-                         " dropdown_6 ";
-}
-.dropdown_1{
-    grid-area: dropdown_1;  
-}
-.dropdown_2{
-    grid-area: dropdown_2;   
-}
-.dropdown_3{
-    grid-area: dropdown_3;   
-}
-.dropdown_4{
-    grid-area: dropdown_4;   
-}
-.dropdown_5{
-    grid-area: dropdown_5;   
-}
-.dropdown_6{
-    grid-area: dropdown_6;   
-}*/
 
 
 
@@ -788,7 +757,125 @@ footer p{
 }
 
 
+@media (max-width: 400px) {
+header{
+    height: 10vw;
 
+}
+.logo{
+    height: 6vw;
+
+}
+header img{
+    width: 25vw;
+}
+.dropdown button{
+    width: 15vw;
+    height: 5vw;
+    right: 20vw;
+    top: -2vw;
+    font-size: 2vw;
+}
+.dropdown-menu{
+    font-size: 2vw;
+    width: 30vw;
+}
+.btn.btn-primary.entrar{
+    left: 75vw;
+    width: 10vw;
+    height: 5vw;
+    font-size: 2vw;
+    top: 2vw;
+
+}
+.btn.btn-primary.cadas{
+    left: 86vw;
+    width: 11vw;
+    height: 5vw;
+    font-size: 1.5vw;
+    top: 2vw;
+    padding: 0;
+}
+main{
+    margin-top: 5vw;
+}
+.brasileirão{
+    font-size: 2vw;
+}
+.times_1 p{
+    font-size: 2vw;
+}
+.times_2 p{
+    font-size: 2vw;
+}
+.um_time{
+    font-size: 2vw;
+    text-decoration: none;
+}
+.dois_time{
+    font-size: 2vw;
+    text-decoration: none;
+}
+.empate{
+    font-size: 2vw;
+    text-decoration: none;
+}
+.esportes_bl1{
+    height: 17vw;
+}
+.esportes_bl2{
+    height: 17vw;
+}
+.esportes_bl3{
+    height: 17vw;
+}
+.esportes_bl4{
+    height: 17vw;
+}
+.esportes{
+    height: 76vw;
+    margin-bottom: 5vw;
+    background-size: 115vw;
+}
+.influenciadores{
+    font-size: 3vw;
+}
+.influ_cont p{
+    font-size: 2vw;
+}
+footer{
+    height: 20vw;
+}
+.footer_img img{
+    width: 5vw;
+    align-items: center;
+    margin: 0;
+}
+.footer_img{
+    margin-bottom: -5vw;
+}
+footer p{
+    margin-top: 8vw;
+    font-size:3vw;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
