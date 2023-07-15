@@ -859,22 +859,102 @@ footer p{
     font-size:3vw;
     margin-bottom: 0;
 }
+.offcanvas.offcanvas-end.entrar{
+    width: 50vw;
+}
+.offcanvas-header{
+    padding: 0;
+}
 
+.offcanvas-body{
+    padding: 0;
+}
+.offcanvas-title img{
+    width: 20vw;
+}
+.offcanvas-title img{
+    width: 30vw;
+}
+.offcanvas-header .btn-close{
+    padding: 0;
+    width: 5vw;
+    height: 5vw;
+    background-size: 2vw ;
+    background-position: center;
+    margin-right: 2vw;
+}
+.form-label.entrar.email{
+    font-size: 2vw;
+}
+.form-label.entrar.pass{
+    font-size: 2vw;
+    margin: 0;
+}
+.form-label.entrar.email{
+    font-size: 2vw;
+    margin: 0;
+}
+.formula_entrar button{
+    font-size: 3vw;
+    border-radius: 10vw;
+    margin-left: 2vw;
+}
 
+/**/
 
+.offcanvas.offcanvas-end.cadas{
+    width: 50vw;
+}
+.offcanvas-header{
+    padding: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.offcanvas-body{
+    padding: 0;
+}
+.offcanvas-title img{
+    width: 20vw;
+}
+.offcanvas-title img{
+    width: 30vw;
+}
+.offcanvas-header .btn-close{
+    padding: 0;
+    width: 5vw;
+    height: 5vw;
+    background-size: 2vw ;
+    background-position: center;
+    margin-right: 2vw;
+}
+.form-label.cadas.email{
+    font-size: 2vw;
+}
+.form-label.cadas.pass{
+    font-size: 2vw;
+    margin: 0;
+}
+.form-label.cadas.email{
+    font-size: 2vw;
+    margin: 0;
+}
+.formula_cadas button{
+    font-size: 3vw;
+    border-radius: 10vw;
+    margin-left: 2vw;
+}
+.form-text{
+    font-size: 1.9vw;
+}
+.form-check-label{
+    font-size: 2vw;
+}
+.form-check-input{
+    width: 3vw;
+}
+#exampleCheck1.form-check-input{
+    margin-left: 0.vw;
+    width: 4vw;
+}
 }
 
 
