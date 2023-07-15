@@ -904,11 +904,11 @@ footer p{
     width: 50vw;
 }
 .offcanvas-header{
-    padding: 0;
+    padding: 1vw;
 }
 
 .offcanvas-body{
-    padding: 0;
+    padding: 1vw;
 }
 .offcanvas-title img{
     width: 20vw;
