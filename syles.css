@@ -947,11 +947,17 @@ footer p{
     font-size: 2vw;
 }
 .form-check-input{
-    width: 3vw;
+    width: 2vw;
 }
 #exampleCheck1.form-check-input{
     margin-left: 0.0vw;
     width: 4vw;
+}
+.mb-3.form-check{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-around;
 }
 }
 
