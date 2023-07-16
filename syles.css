@@ -236,6 +236,10 @@ main{
     border-bottom: solid 0.5vw;
     z-index: 1;
     overflow-x: hidden;
+    background-image: url(imgs/main.webp);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: 100vw;
 }
 .carousel.banner{
     grid-area: carousel;
@@ -323,17 +327,17 @@ main{
 }
 .carousel-item.um img{
     border-radius: 2vw;
-    border: 0.3vw solid #B19DD0;
+    border: 0.3vw solid #170C36;
 }
 .carousel-item.active.um img{
     border-radius: 2vw;
-    border: 0.3vw solid #B19DD0;
+    border: 0.3vw solid #170C36;
 }
 .carousel-item.active.um img:hover{
     cursor: pointer;
 }
 .text_botao{
-    color:#B19DD0;
+    color:#170C36;
     font-weight: bold;
     font-size: 2vw;
     font-family: 'Karla', sans-serif;
@@ -341,7 +345,7 @@ main{
 
 }
 .carousel-control-prev.row{
- left: 21vw;
+ left: 22vw;
  z-index: 10;
  height: 3vw;
  width: 2vw;
@@ -350,7 +354,7 @@ main{
  padding: 0;
 }
 .carousel-control-next.row{
- left: 23vw;
+ left: 25vw;
  z-index: 10;
  height: 3vw;
  width: 2.5vw;
@@ -362,13 +366,13 @@ main{
     background-size: 2vw;
     background-position: center;
     height: 3vw;
-    width: 1vw;
+    width: 3vw;
 }
 .carousel-control-prev-icon{
     background-size: 2vw;
     background-position: center;
     height: 3vw;
-    width: 1vw;
+    width: 3vw;
 }
 
 
@@ -410,17 +414,17 @@ main{
 }
 .carousel-item.dois img{
     border-radius: 2vw;
-    border: 0.3vw solid #B19DD0;
+    border: 0.3vw solid #170C36;
 }
 .carousel-item.active.dois img{
     border-radius: 2vw;
-    border: 0.3vw solid #B19DD0;
+    border: 0.3vw solid #170C36;
 }
 .carousel-item.active.dois img:hover{
     cursor: pointer;
 }
 .text_botao_1{ 
-    color:#B19DD0;
+    color:#170C36;
     font-weight: bold;
     font-size: 2vw;
     font-family: 'Karla', sans-serif;
@@ -430,17 +434,17 @@ main{
  left: 35vw;
  z-index: 10;
  height: 3vw;
- width: 2vw;
+ width: 3vw;
  position: absolute;
  margin: 0;
  padding: 0;
 
 }
 .carousel-control-next.row_2{
- right: 60vw;
+ right: 58vw;
  z-index: 10;
  height: 3vw;
- width: 2.5vw;
+ width: 3vw;
  position: absolute;
  margin: 0;
  padding: 0;
