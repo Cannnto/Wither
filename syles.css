@@ -795,7 +795,61 @@ header img{
 }
 main{
     margin-top: 5vw;
+    background-size: 110vw;
 }
+.carousel.slide.banner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+}
+.row{
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 90vw;
+    padding: 0;
+}
+.text_botao p{
+    margin: 0;
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+
+.carousel-control-prev.row.position-absolute{
+    left: 17vw;
+    top: 0.5vw;
+    width: 4vw;
+}
+.carousel-control-next.row.position-absolute{
+    left: 20vw;
+    top: 0.5vw;
+    width: 4vw;
+}
+.row_2{
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    padding: 0;
+}
+.text_botao_1{
+    margin-left: 2vw;
+}
+.text_botao_1 p{
+    margin: 0;
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+.carousel-control-prev.row_2{
+    left: 39vw;
+    top: 0.7vw;
+}
+.carousel-control-next.row_2{
+    left: 42vw;
+    top: 0.7vw;
+}
+
 .brasileirão{
     font-size: 2vw;
 }
@@ -830,15 +884,31 @@ main{
     height: 17vw;
 }
 .esportes{
-    height: 76vw;
-    margin-bottom: 5vw;
+    height: 80vw;
     background-size: 115vw;
 }
+.influ{
+    height: 60vw;
+    align-items: center;
+    justify-content: start;
+}
 .influenciadores{
-    font-size: 3vw;
+    font-size: 4vw;
 }
 .influ_cont p{
-    font-size: 2vw;
+    font-size: 2.5vw;
+    height: 14vw;
+    width: 90vw;
+}
+.influ_cont img{
+    width: 80vw;
+    height: 30vw;
+    margin-bottom: 5vw;
+}
+.influ_cont{
+    justify-content:right;
+    align-items: center;
+    flex-direction: column;
 }
 footer{
     height: 20vw;
@@ -856,6 +926,14 @@ footer p{
     font-size:3vw;
     margin-bottom: 0;
 }
+
+
+
+
+
+
+
+
 .offcanvas.offcanvas-end.entrar{
     width: 50vw;
 }
