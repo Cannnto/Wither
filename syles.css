@@ -587,6 +587,7 @@ main{
     font-size: 1vw;
     font-family: 'Karla', sans-serif;
     margin-bottom: 1vw;
+    margin-left: 1vw;
     
 }
 .times_2{
@@ -597,6 +598,7 @@ main{
     font-weight: bold;
     font-size: 1vw;
     font-family: 'Karla', sans-serif;
+    margin-left: 1vw;
 }
 .times_1 img{
     width: 2.7vw;
@@ -635,6 +637,10 @@ main{
     text-decoration: underline;
     cursor: pointer;
     box-shadow: 0px 0px 10px black;
+    transition: 0.2s;
+}
+.um_time:hover{
+    transform: scale(1.05);
 }
 .empate{
     grid-area: empate;
@@ -650,6 +656,11 @@ main{
     text-decoration: underline;
     cursor: pointer;
     box-shadow: 0px 0px 10px black;
+    transition: 0.2s;
+}
+
+.empate:hover{
+    transform: scale(1.05);
 }
 .dois_time{
     grid-area: dois;
@@ -666,6 +677,11 @@ main{
     text-decoration: underline;
     cursor: pointer;
     box-shadow: 0px 0px 10px black;
+    transition: 0.2s;
+}
+
+.dois_time:hover{
+    transform: scale(1.05);
 }
 .um_time p{
     margin: 0;
